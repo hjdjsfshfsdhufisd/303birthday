@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            background: white;
+            padding: 20px;
+        }
+        .button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            color: white;
+        }
+        .btn1 { background: #ff99cc; }
+        .btn2 { background: #ff66b2; }
+        .btn3 { background: #9933cc; }
+        #message, #date {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        #cake {
+            display: none;
+            margin: 20px 0;
+        }
+        #cake img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #cc0066;">🎈 Birthday Greeting 🎈</h1>
+    
+    <button class="button btn1" onclick="showCake()">Show Cake 🎂</button>
+    <button class="button btn2" onclick="showMessage()">Happy Birthday ya Habibty ❤️</button>
+    <button class="button btn3" onclick="showDate()">30/3/2010 🤍</button>
+    
+    <div id="message"></div>
+    <div id="date"></div>
+    <div id="cake">
+        <img src="cake.png" alt="Birthday Cake">
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerHTML = '🎉 Happy Birthday Ya Habibtyy 🎉';
+            document.getElementById('cake').style.display = 'none';
+        }
+        function showDate() {
+            document.getElementById('date').innerHTML = '📅 Date of Birth: 30/3/2010';
+            document.getElementById('cake').style.display = 'none';
+        }
+        function showCake() {
+            document.getElementById('cake').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
